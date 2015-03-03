@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<title>Location &amp; Contact Finder</title>
+	<link rel="stylesheet" href="framework/css/main.css">
+</head>
+
+<body onload="onDeviceReady()">
+	<div id="title" data-role="title">
+		<h2>Location &amp; Contact Finder</h2>
+	</div>
+
+	<nav>
+		<ul id="tabs" data-role="tabs">
+			<a href="#home" data-role="link" class="selected">
+				<li data-role="tab">Home
+					<img data-role="mini-icon" src="framework/svg/home168.svg">
+				</li>
+			</a>
+			<a href="#maps" data-role="link" class="idle">
+				<li data-role="tab">Maps
+					<img data-role="mini-icon" src="framework/svg/pin56.svg">
+				</li>
+			</a>
+			<a href="#contacts" data-role="link" class="idle">
+				<li data-role="tab">Contacts
+					<img data-role="mini-icon" src="framework/svg/multiple25.svg">
+				</li>
+			</a>
+		</ul>
+	</nav>
+
+	<div id="home" data-role="page" class="active">
+		<h1>It has Never Been This Easy!</h1>
+		<p>Congratulations! You have found the best and most sophisticated tracking application in the world. This mobile application was designed with the help of NASA engineers with over 9000 man-hours of labor. Your desire to find track your geolocation can finally be fulfilled along with the satisfaction of learning something new about a contact on your device. This app will soon dominate the universe! Click the button below to get access to top-secret resources.</p>
+		<a href="#author" data-role="link"><button class="button">Bonus Page!</button></a>
+	</div>
+
+	<div id="maps" data-role="page" class="inactive">
+		<h1>Maps</h1>
+		<h3>Your current location:</h3>
+		<img class="location" data-role="location" />
+	</div>
+
+	<div id="contacts" data-role="page" class="inactive">
+		<h1>Contacts</h1>
+		<p data-role="randomContact"></p>
+	</div>
+
+	<div id="author" data-role="page" class="inactive">
+		<h1>Author</h1>
+		<br>
+		<h3>Gabriel Dubé</h3>
+		<br>
+		<a href="mailto:dube0141@algonquinlive.com">Email: dube0141@algonquinlive.com</a>
+		<br><br>
+		<a href="http://codepen.io/dube0141/">CodePen: dube0141</a>
+		<br><br>
+		<a href="https://github.com/dube0141">GitHub: dube0141</a>
+	</div>
+	
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="framework/js/hammer.min.js"></script>
+	<script type="text/javascript" src="framework/js/main.js"></script>
+</body>
+
+</html>
