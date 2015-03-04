@@ -86,7 +86,7 @@ function findCon() {
 		var r = Math.floor(Math.random() * contacts.length);
 				
 		if (contacts[r].name.formatted) {
-			console.log("Contact Found!")
+			console.log("Contact Found!");
 			var randomContact = document.querySelector('[data-role="randomContact"]');
 
 			function contactValidation(a) {
